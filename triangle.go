@@ -10,6 +10,7 @@ type Triangle struct {
 func (t Triangle) CalcPerimeter() float64 {
 	return 3 * t.Side
 }
+
 func (t Triangle) CalcArea() float64 {
-	return math.Pow(t.Side, 2)
+	return math.Sqrt(3) * math.Pow(t.Side, 2) / 4
 }
